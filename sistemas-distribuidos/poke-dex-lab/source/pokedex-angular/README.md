@@ -1,36 +1,54 @@
-# Pokédex Angular
+# 🧢 Proyecto PokeDex - Azure Static Web Apps
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![codecov](https://codecov.io/gh/keilermora/pokedex-angular/branch/master/graph/badge.svg?token=9E0D28IOFT)](https://codecov.io/gh/keilermora/pokedex-angular)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+Este repositorio contiene el código fuente y documentación para el despliegue seguro de la aplicación **PokeDex** en la nube utilizando **Azure for Students**.
 
-[https://keilermora.github.io/pokedex-angular/](https://keilermora.github.io/pokedex-angular/)
+## 👨‍💻 Descripción del Proyecto
 
-La aplicación muestra el listado y el detalle de los Pokémon de las primeras 3 generaciones.
+**PokeDex** es una aplicación web que permite explorar diferentes especies de Pokémon, consultando sus estadísticas, tipos y habilidades a través de la PokéAPI. La interfaz está diseñada para ser clara, interactiva y educativa.
 
-La imagen que representa un Pokémon en el listado muestra las variaciones que estos tuvieron durante las primeras versiones, desde la versión Green (1996) hasta la version Emerald (2005).
+## 🛠 Tecnologías Usadas
 
-Los detalles de un Pokémon individual muestra sus estadísticas base y los registros de la Pokédex de las diferentes versiones.
+- HTML5, CSS3, JavaScript
+- [PokéAPI](https://pokeapi.co/)
+- Git y GitHub
+- Azure Static Web Apps
+- Encabezados de seguridad HTTP (CSP, HSTS, etc.)
 
-El proyecto fue desarrollado usando la librería de JavaScript [Angular](https://angular.io/) para crear la interfaz de usuario, en comunicación con la Api RESTful [PokéAPI](https://pokeapi.co/).
+## 🧾 Creación de la Cuenta en Azure for Students
 
-## Requisitos mínimos
+1. Accede a: [https://azure.microsoft.com/en-us/free/students/](https://azure.microsoft.com/en-us/free/students/)
+2. Haz clic en el botón **"Start free"**.
+3. Inicia sesión con tu **correo institucional universitario**.
+4. Llena el formulario con tus datos personales.
+5. Acepta los términos y condiciones.
+6. Confirma la verificación académica (puede ser automática o manual).
+7. Una vez validada tu cuenta, tendrás acceso a los recursos gratuitos de Azure.
 
-- [Nodejs](https://nodejs.org) con soporte de largo plazo (LTS).
-- Un navegador web
-
-## Ambiente de pruebas
-
-Ejecutar en la raíz del proyecto:
+## 📂 Estructura del Repositorio
 
 ```
-npm start
+pokedex/
+├── index.html
+├── styles.css
+├── script.js
+├── staticwebapp.config.json
+├── README.md
+└── Despliegue.md
 ```
 
-## Referencias
+## ✅ Seguridad
 
-- [Angular](https://angular.io/): One framework.
-- [Angular Folder Structure](https://angular-folder-structure.readthedocs.io/en/latest/): Create a skeleton structure which is flexible for projects big or small.
-- [Font Awesome](https://fontawesome.com/): The web's most popular icon set and toolkit.
-- [Normalize.css](https://necolas.github.io/normalize.css/): A modern, HTML5-ready alternative to CSS resets.
-- [PokéAPI](https://pokeapi.co/): The RESTful Pokémon API.
+Para garantizar una buena puntuacion en [SecurityHeaders.com](https://securityheaders.com), se añadieron encabezados HTTP seguros en el archivo `staticwebapp.config.json`.
+
+Incluye:
+
+- `Content-Security-Policy`
+- `Strict-Transport-Security`
+- `X-Frame-Options`
+- `X-Content-Type-Options`
+- `Referrer-Policy`
+- `Permissions-Policy`
+
+## 🔗 Enlace a la Aplicación en Producción
+
+https://ashy-river-0f6dc211e.6.azurestaticapps.net/
